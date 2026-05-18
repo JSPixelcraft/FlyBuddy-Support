@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>FlyBuddy</title>
 
 <style>
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, sans-serif;
@@ -15,26 +22,35 @@ body {
 }
 
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 60px 24px;
 }
 
+.logo {
+    width: 220px;
+    max-width: 80%;
+    border-radius: 28px;
+    margin-bottom: 30px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.45);
+}
+
 .hero {
     text-align: center;
-    padding: 80px 0;
+    padding: 90px 0;
 }
 
 .hero h1 {
-    font-size: 64px;
-    margin-bottom: 10px;
+    font-size: 72px;
+    margin-bottom: 14px;
     font-weight: 800;
+    letter-spacing: -2px;
 }
 
 .hero p {
     font-size: 22px;
     color: #b8c1d1;
-    max-width: 700px;
+    max-width: 760px;
     margin: auto;
 }
 
@@ -45,8 +61,8 @@ body {
 .card {
     background: #151b2c;
     border: 1px solid rgba(255,255,255,0.08);
-    border-radius: 24px;
-    padding: 28px;
+    border-radius: 28px;
+    padding: 32px;
     margin-bottom: 24px;
     transition: 0.25s ease;
 }
@@ -58,12 +74,13 @@ body {
 
 .card h2 {
     margin-top: 0;
-    font-size: 28px;
+    font-size: 30px;
 }
 
 .card p {
     color: #b8c1d1;
     margin-bottom: 0;
+    font-size: 17px;
 }
 
 .premium {
@@ -81,6 +98,22 @@ body {
     color: #7dd3fc;
 }
 
+@media (max-width: 768px) {
+
+    .hero h1 {
+        font-size: 50px;
+    }
+
+    .hero p {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 170px;
+    }
+
+}
+
 </style>
 </head>
 
@@ -89,48 +122,76 @@ body {
 <div class="container">
 
     <div class="hero">
-        <h1>FlyBuddy ✈️</h1>
+
+        <img src="logo.png" class="logo">
+
+        <h1>
+            FlyBuddy ✈️
+        </h1>
+
         <p>
             Your smart AI-powered flight companion.<br>
-            Navigate airports, track flights, and survive travel chaos with <span class="highlight">Bob</span>.
+            Navigate airports, track flights, and survive travel chaos with
+            <span class="highlight">Bob</span>.
         </p>
+
     </div>
 
     <div class="section">
 
         <div class="card">
+
             <h2>✈️ Real-Time Flight Tracking</h2>
+
             <p>
-                Track departures, arrivals, gates, delays, and timelines in real time.
+                Track departures, arrivals, gates, delays,
+                and timelines in real time.
             </p>
+
         </div>
 
         <div class="card">
+
             <h2>🧭 Smart Airport Navigation</h2>
+
             <p>
-                Find terminals, gates, and important airport locations faster with intelligent tools.
+                Find terminals, gates, and important airport locations
+                faster with intelligent tools.
             </p>
+
         </div>
 
         <div class="card">
+
             <h2>🤖 Meet Bob</h2>
+
             <p>
-                Your slightly chaotic AI travel buddy helps guide you through modern travel stress with humor and alerts.
+                Your slightly chaotic AI travel buddy helps guide you
+                through modern travel stress with humor and alerts.
             </p>
+
         </div>
 
         <div class="card">
+
             <h2>📍 Context-Aware Travel</h2>
+
             <p>
-                FlyBuddy adapts to your journey and location to surface the information you actually need.
+                FlyBuddy adapts to your journey and location
+                to surface the information you actually need.
             </p>
+
         </div>
 
         <div class="card premium">
+
             <h2>🌙 FlyBuddy Premium</h2>
+
             <p>
-                Unlock advanced features, smarter AI interactions, and future premium travel tools.
+                Unlock advanced features, smarter AI interactions,
+                and future premium travel tools.
             </p>
+
         </div>
 
     </div>
@@ -141,5 +202,5 @@ body {
 
 </div>
 
-
-</p>
+</body>
+</html>
